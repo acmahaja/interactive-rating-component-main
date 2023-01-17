@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    
-    
+    <link rel="stylesheet" href="style.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -17,28 +16,35 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    
-    <div class="card" id="FeedbackCard">
+    <div class="card hidden" id="FeedbackCard">
       <div id="star"></div>
-      <h1 id="question">How did we do?</h1>      
-      <p id="description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <br>
+      <h1 id="question">How did we do?</h1>
+      <p id="description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <br />
       <div id="buttons">
         <button class="button" onclick="selectedRating(1)" id="1">1</button>
         <button class="button" onclick="selectedRating(2)" id="2">2</button>
-        <button class="button selected" onclick="selectedRating(3)" id="3">3</button>
+        <button class="button" onclick="selectedRating(3)" id="3">3</button>
         <button class="button" onclick="selectedRating(4)" id="4">4</button>
         <button class="button" onclick="selectedRating(5)" id="5">5</button>
       </div>
       <button onclick="submit()" type="submit" id="submit">submit</button>
     </div>
-    
 
-    <div class="card hidden" id="ThankCard">
-      Thanks
+    <div class="card" id="ThankCard">
+      <img src="images/illustration-thank-you.svg" alt="mobile phone" />
+
+      <h2 id="rating">
+        You selected <span id="UserRating"></span> out of 5
+      </h2>
+
+      <h3 id="ThankHeader">Thank you!</h3>
+
+      <p id="ThankMessage">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
     </div>
-
-
     <script src="script.js"></script>
   </body>
 </html>

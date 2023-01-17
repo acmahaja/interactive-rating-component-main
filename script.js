@@ -1,8 +1,9 @@
-let rating = -1;
+let rating = 5;
 let submitted = false;
 
-function submit(event) {
-    console.log("Submitting");
+function submit() {
+    document.getElementById("FeedbackCard").classList.add('hidden')
+    document.getElementById("ThankCard").classList.remove('hidden')
 }
 
 
@@ -18,3 +19,4 @@ function selectedRating(number){
     }
     document.getElementById(number).classList.add('selected')
 }
+document.getElementById("UserRating").innerHTML = rating

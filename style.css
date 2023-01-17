@@ -29,7 +29,7 @@ body {
   display: none;
 }
 
-#FeedbackCard.card {
+.card {
   background: var(--black-gradient);
   width: 100%;
   height: 25.7142857143rem;
@@ -107,15 +107,15 @@ body {
 }
 
 #FeedbackCard .button:hover {
-    background: rgb(var(--orange));
-    color: rgb(var(--pure-white));
-    cursor: pointer;
+  background: rgb(var(--orange));
+  color: rgb(var(--pure-white));
+  cursor: pointer;
 }
 
 #FeedbackCard .button.selected {
-    background: rgb(var(--medium-grey));
-    color: rgb(var(--pure-white));
-    cursor: pointer;
+  background: rgb(var(--medium-grey));
+  color: rgb(var(--pure-white));
+  cursor: pointer;
 }
 
 #FeedbackCard #submit {
@@ -135,7 +135,57 @@ body {
 }
 
 #FeedbackCard #submit:hover {
-    background: rgb(var(--pure-white));
-    color: rgb(var(--orange));
-    cursor: pointer;
+  background: rgb(var(--pure-white));
+  color: rgb(var(--orange));
+  cursor: pointer;
+}
+
+#ThankCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#ThankCard img {
+    position: absolute;
+    top: 2rem;
+  height: 6.8571428571rem;
+  width: auto;
+}
+
+#ThankCard #rating {
+  position: absolute;
+  top: 10.57rem;
+  margin: 0px;
+  background: rgb(var(--dark-blue));
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5714285714rem;
+  color: rgb(var(--orange));
+  padding: 0.3571428571rem 1.3333333333ch;
+  border-radius: 1.6071428571rem;
+}
+
+#ThankCard #ThankHeader {
+  position: absolute;
+  top: 14.5714285714rem;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(var(--pure-white));
+  margin: 0px;
+}
+
+#ThankCard #ThankMessage {
+  position: absolute;
+  top: 16.93rem;
+  width: calc(100% - 2.6666666667ch * 2);
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5714285714rem;
+  color: rgb(var(--light-grey));
 }
