@@ -182,7 +182,7 @@ body {
 #ThankCard #ThankMessage {
   position: absolute;
   top: 251px;
-  width: calc(100% - 2.6666666667ch * 2);
+  width: 340px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -238,7 +238,7 @@ body {
 
   #FeedbackCard #submit {
     top: 339px;
-    width: 43.8ch;
+    width: 341px;
   }
 
   #ThankCard img {
@@ -252,7 +252,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    padding: 0.2857142857rem 2.2222222222ch;
+    padding: 4px 20px;
   }
 
   #ThankCard #ThankHeader {
