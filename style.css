@@ -213,6 +213,9 @@ body {
 
   #FeedbackCard #question {
     top: 110px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
   }
 
   #FeedbackCard #description {
@@ -275,6 +278,6 @@ footer {
   text-align: center;
 }
 
-footer a{
+footer a {
   color: rgb(var(--orange));
 }
