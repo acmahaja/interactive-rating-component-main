@@ -23,14 +23,13 @@ body {
   place-items: center;
   font-family: "Overpass", sans-serif;
   font-size: 14px;
-  color: white;
 }
 
 .hidden {
   display: none;
 }
 
-.card {
+#FeedbackCard.card {
   background: var(--black-gradient);
   width: 100%;
   height: 25.7142857143rem;
@@ -39,9 +38,10 @@ body {
   overflow: hidden;
   padding: 2.6666666667ch;
   position: relative;
+  box-sizing: border-box;
 }
 
-#star {
+#FeedbackCard #star {
   position: absolute;
   top: 1.7142857143rem;
   height: 2.8571428571rem;
@@ -53,11 +53,71 @@ body {
   place-items: center;
 }
 
-#star::after {
-    content: "";
+#FeedbackCard #star::after {
+  content: "";
   width: 20px;
   height: 20px;
   background-image: url("images/icon-star.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#FeedbackCard #question {
+  position: absolute;
+  top: 5.7142857143rem;
+  font-weight: 700;
+  font-size: 1.7142857143rem;
+  line-height: 2.1428571429rem;
+  margin: 0px;
+  color: rgb(var(--pure-white));
+}
+
+#FeedbackCard #description {
+  position: absolute;
+  top: 9.0714285714rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5714285714rem;
+  width: calc(100% - 2.6666666667ch * 2);
+
+  color: rgb(var(--light-grey));
+  margin: 0px;
+}
+
+#FeedbackCard #buttons {
+  position: absolute;
+  top: 15.5rem;
+  height: fit-content;
+  width: calc(100% - 2.6666666667ch * 2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#FeedbackCard .button {
+  background: rgb(var(--dark-blue));
+  color: rgb(var(--medium-grey));
+  height: 3rem;
+  width: 5.666ch;
+  border: none;
+  padding: 0px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+#FeedbackCard #submit {
+  position: absolute;
+  bottom: 2.2857142857rem;
+  width: calc(100% - 2.6666666667ch * 2);
+  height: 3.2142857143rem;
+  border: none;
+  background: rgb(var(--orange));
+  color: rgb(var(--pure-white));
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2857142857;
+  letter-spacing: 1.86667px;
+  border-radius: 1.6071428571rem;
 }
