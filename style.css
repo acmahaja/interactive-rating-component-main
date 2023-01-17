@@ -26,7 +26,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .card {
@@ -149,8 +149,8 @@ body {
 }
 
 #ThankCard img {
-    position: absolute;
-    top: 2rem;
+  position: absolute;
+  top: 2rem;
   height: 6.8571428571rem;
   width: auto;
 }
@@ -188,4 +188,41 @@ body {
   font-size: 1rem;
   line-height: 1.5714285714rem;
   color: rgb(var(--light-grey));
+}
+
+@media only screen and (min-width: 500px) {
+  .card {
+    min-width: 45.84ch !important;
+    height: 416px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    padding-left: 3.5555555556ch;
+  }
+
+  #FeedbackCard #star {
+    top: 2.2857142857rem;
+  }
+
+  #FeedbackCard #question {
+    top: 7.8571428571rem;
+  }
+
+  #FeedbackCard #description {
+    top: 11.4285714286rem;
+  }
+
+  #FeedbackCard #buttons {
+    top: 18.2857142857rem;
+    width: 37.94ch;
+  }
+
+  #FeedbackCard .button {
+    width: 6.88ch;
+    height: 3.6428571429rem;
+  }
+
+  #FeedbackCard #submit {
+    top: 24.285rem;
+    width: 43.8ch;
+  }
 }

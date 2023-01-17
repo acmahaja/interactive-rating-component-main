@@ -18,5 +18,6 @@ function selectedRating(number){
         }
     }
     document.getElementById(number).classList.add('selected')
+    document.getElementById("UserRating").innerHTML = rating
 }
-document.getElementById("UserRating").innerHTML = rating
+
