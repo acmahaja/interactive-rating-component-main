@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --dark-blue: 38, 46, 56;
+  --light-grey: 150, 159, 173;
+  --medium-grey: 124, 135, 152;
+  --orange: 252, 118, 20;
+  --pure-white: 255, 255, 255;
+  --very-dark-blue: 19, 21, 24;
+  --black-gradient: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: rgb(var(--very-dark-blue));
+  display: grid;
+  place-items: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: var(--black-gradient);
+  width: 100%;
+  height: 25.7142857143rem;
+  max-width: 36.383ch;
+  border-radius: 1.0714285714rem;
+  overflow: hidden;
+  padding: 2.6666666667ch;
+  position: relative;
+}
+
+#star {
+  position: absolute;
+  top: 1.7142857143rem;
+  height: 2.8571428571rem;
+  width: 4.452ch;
+  border-radius: 50%;
+  background-color: rgb(var(--dark-blue));
+
+  display: grid;
+  place-items: center;
+}
+
+#star::after {
+    content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
