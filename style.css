@@ -106,6 +106,18 @@ body {
   font-weight: 700;
 }
 
+#FeedbackCard .button:hover {
+    background: rgb(var(--orange));
+    color: rgb(var(--pure-white));
+    cursor: pointer;
+}
+
+#FeedbackCard .button.selected {
+    background: rgb(var(--medium-grey));
+    color: rgb(var(--pure-white));
+    cursor: pointer;
+}
+
 #FeedbackCard #submit {
   position: absolute;
   bottom: 2.2857142857rem;
@@ -120,4 +132,10 @@ body {
   line-height: 1.2857142857;
   letter-spacing: 1.86667px;
   border-radius: 1.6071428571rem;
+}
+
+#FeedbackCard #submit:hover {
+    background: rgb(var(--pure-white));
+    color: rgb(var(--orange));
+    cursor: pointer;
 }

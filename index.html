@@ -18,20 +18,21 @@
   </head>
   <body>
     
-    <form class="card" id="FeedbackCard">
+    <div class="card" id="FeedbackCard">
       <div id="star"></div>
       <h1 id="question">How did we do?</h1>      
       <p id="description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <br>
       <div id="buttons">
-        <button class="button" id="1">1</button>
-        <button class="button" id="2">2</button>
-        <button class="button" id="3">3</button>
-        <button class="button" id="4">4</button>
-        <button class="button" id="5">5</button>
+        <button class="button" onclick="selectedRating(1)" id="1">1</button>
+        <button class="button" onclick="selectedRating(2)" id="2">2</button>
+        <button class="button selected" onclick="selectedRating(3)" id="3">3</button>
+        <button class="button" onclick="selectedRating(4)" id="4">4</button>
+        <button class="button" onclick="selectedRating(5)" id="5">5</button>
       </div>
-      <button id="submit">submit</button>
-    </form>
+      <button onclick="submit()" type="submit" id="submit">submit</button>
+    </div>
+    
 
     <div class="card hidden" id="ThankCard">
       Thanks
