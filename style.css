@@ -225,4 +225,28 @@ body {
     top: 24.285rem;
     width: 43.8ch;
   }
+
+  #ThankCard img {
+    height: 7.7142857143rem;
+    width: auto;
+    top: 3.2142857143rem;
+  }
+
+  #ThankCard #rating {
+    top: 13.2142857143rem;
+    font-size: 1.0714285714rem;
+    padding: 0.2857142857rem 2.2222222222ch;
+  }
+
+  #ThankCard #ThankHeader {
+    top: 17.7857142857rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  #ThankCard #ThankMessage {
+    top: 20.285rem;
+    font-size: 1.0714285714rem;
+    line-height: 1.7142857143rem;
+  }
 }
